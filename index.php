@@ -9,19 +9,43 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/index.css">
+	<!--I was unable to find a way to add images to arrays and setup them up if someone can take a look as that-->
+	<?php
+		$i=0;
+		$group=[
+    		[
+        		'name'=>'Angel Munoz',
+        		'Year'=>'Sophmore',
+        		'picture'=>['']
+    		],
+    		[
+        		'name'=>'',
+        		'Year'=>'',
+        		'picture'=>['']
+    		],
+    		[
+        		'name'=>'',
+        		'Year'=>'',
+        		'picture'=>[
+					''
+				]
+    		],
+			[
+        		'name'=>'',
+        		'Year'=>'',
+        		'picture'=>['']
+    		],
+		];
+	?>
 	<title>
-		<?php
-			echo "ASE 230 - class of Fall 2022";
-		?>
+		ASE 230 - class of Fall 2022
 	</title>
 </head>
 
 <body>
 	<div class="container text-center">
 		<h1>
-			<?php
-				echo "This is ASE 230 - class of Fall 2022";
-			?>
+			This is ASE 230 - class of Fall 2022
 		</h1>
 	</div>
 	<div class="container">
@@ -31,19 +55,13 @@
 				<!-- Section Heading-->
 				<div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
 					<h3>
-						<?php
-							echo "Our Creative";
-						?>
+						Our Creative
 						<span>
-							<?php
-								echo "Team";
-							?>
+							Team
 						</span>
 					</h3>
 					<p>
-						<?php
-							echo "Appland is completely creative, lightweight, clean &amp; super responsive app landing page."
-						?>
+						Appland is completely creative, lightweight, clean &amp; super responsive app landing page.
 					</p>
 					<div class="line"></div>
 				</div>
@@ -57,23 +75,33 @@
 
 					<!-- Team Thumb-->
 					<div class="advisor_thumb">
-						<a href="Angel_Munoz.php">
-							<?php	
-								echo '<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">';
+						
+							<?php
+								$i=0;
+								echo '<a href="details.php?id='.$i.'&name='.$group[0]['name'].'">	
+									<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+								</a>';
 							?>
-						</a>
+						
 
 						<!-- Social Info-->
+						
 						<div class="social-info">
-							<a href="Angel_Munoz.php">
-								<i class="fa fa-facebook"></i>
-							</a>
-							<a href="Angel_Munoz.php">
-								<i class="fa fa-twitter"></i>
-							</a>
-							<a href="Angel_Munoz.php">
-								<i class="fa fa-linkedin"></i>
-							</a>
+							<?php
+								$i=0;
+								echo '<a href="details.php?id='.$i.'&name='.$group[0]['name'].'">
+										<i class="fa fa-facebook"></i>
+									</a>';
+							
+								echo '<a href="details.php?id='.$i.'&name='.$group[0]['name'].'">
+										<i class="fa fa-twitter"></i>
+									</a>';
+							
+								echo '<a href="details.php?id='.$i.'&name='.$group[0]['name'].'">
+									<i class="fa fa-linkedin"></i>
+								</a>';
+								$i++;
+							?>
 						</div>
 					</div>
 
@@ -81,12 +109,12 @@
 					<div class="single_advisor_details_info">
 						<h6>
 							<?php
-								echo "Angel Munoz";
+								echo $group[0]["name"];
 							?>
 						</h6>
 						<p class="designation">
 							<?php
-								echo "Student (Sophmore)";
+								echo $group[0]["Year"];
 							?>
 						</p>
 					</div>
@@ -99,23 +127,31 @@
 
 					<!-- Team Thumb-->
 					<div class="advisor_thumb">
-						<a href="Angel_Munoz.php">
+						<a href="details.php">
 							<?php
-								echo '<img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">';
+								$i=1;
+								echo '<a href="details.php?id='.$i.'&name='.$group[1]['name'].'">	
+									<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+								</a>';
 							?>
 						</a>
 
 						<!-- Social Info-->
 						<div class="social-info">
-							<a href="Angel_Munoz.php">
-								<i class="fa fa-facebook"></i>
-							</a>
-							<a href="Angel_Munoz.php">
-								<i class="fa fa-twitter"></i>
-							</a>
-							<a href="Angel_Munoz.php">
-								<i class="fa fa-linkedin"></i>
-							</a>
+							<?php
+								$i=1;
+								echo '<a href="details.php?id='.$i.'&name='.$group[1]['name'].'">
+										<i class="fa fa-facebook"></i>
+									</a>';
+							
+								echo '<a href="details.php?id='.$i.'&name='.$group[1]['name'].'">
+										<i class="fa fa-twitter"></i>
+									</a>';
+							
+								echo '<a href="details.php?id='.$i.'&name='.$group[1]['name'].'">
+									<i class="fa fa-linkedin"></i>
+								</a>';
+							?>
 						</div>
 					</div>
 
@@ -123,12 +159,12 @@
 					<div class="single_advisor_details_info">
 						<h6>
 							<?php
-								echo "Nazrul Islam";
+								echo $group[1]["name"];
 							?>
 						</h6>
 						<p class="designation">
 							<?php
-								echo "UI Designer";
+								echo $group[1]["Year"];
 							?>
 						</p>
 					</div>
@@ -141,23 +177,31 @@
 
 					<!-- Team Thumb-->
 					<div class="advisor_thumb">
-						<a href="Angel_Munoz.php">
+						<a href="details.php">
 							<?php
-								echo '<img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">';
+							$i=2;
+								echo '<a href="details.php?id='.$i.'&name='.$group[2]['name'].'">	
+									<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+								</a>';
 							?>
 						</a>
 
 						<!-- Social Info-->
 						<div class="social-info">
-							<a href="Angel_Munoz.php">
-								<i class="fa fa-facebook"></i>
-							</a>
-							<a href="Angel_Munoz.php">
-								<i class="fa fa-twitter"></i>
-							</a>
-							<a href="Angel_Munoz.php">
-								<i class="fa fa-linkedin"></i>
-							</a>
+							<?php
+								$i=0;
+								echo '<a href="details.php?id='.$i.'&name='.$group[2]['name'].'">
+										<i class="fa fa-facebook"></i>
+									</a>';
+							
+								echo '<a href="details.php?id='.$i.'&name='.$group[2]['name'].'">
+										<i class="fa fa-twitter"></i>
+									</a>';
+							
+								echo '<a href="details.php?id='.$i.'&name='.$group[2]['name'].'">
+									<i class="fa fa-linkedin"></i>
+								</a>';
+							?>
 						</div>
 					</div>
 
@@ -165,12 +209,12 @@
 					<div class="single_advisor_details_info">
 						<h6>
 							<?php
-								echo "Riyadh Khan";
+								echo $group[2]["name"];
 							?>
 						</h6>
 						<p class="designation">
 							<?php
-								echo "Developer";
+								echo $group[2]["Year"];
 							?>
 						</p>
 					</div>
@@ -183,23 +227,31 @@
 
 					<!-- Team Thumb-->
 					<div class="advisor_thumb">
-						<a href="Angel_Munoz.php">
+						<a href="details.php">
 							<?php
-								echo '<img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">';
+								$i=3;
+								echo '<a href="details.php?id='.$i.'&name='.$group[3]['name'].'">	
+									<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+								</a>';
 							?>
 						</a>
 
 						<!-- Social Info-->
 						<div class="social-info">
-							<a href="Angel_Munoz.php">
-								<i class="fa fa-facebook"></i>
-							</a>
-							<a href="Angel_Munoz.php">
-								<i class="fa fa-twitter"></i>
-							</a>
-							<a href="Angel_Munoz.php">
-								<i class="fa fa-linkedin"></i>
-							</a>
+							<?php
+								$i=3;
+								echo '<a href="details.php?id='.$i.'&name='.$group[3]['name'].'">
+										<i class="fa fa-facebook"></i>
+									</a>';
+							
+								echo '<a href="details.php?id='.$i.'&name='.$group[3]['name'].'">
+										<i class="fa fa-twitter"></i>
+									</a>';
+							
+								echo '<a href="details.php?id='.$i.'&name='.$group[3]['name'].'">
+									<i class="fa fa-linkedin"></i>
+								</a>';
+							?>
 						</div>
 					</div>
 
@@ -207,12 +259,12 @@
 					<div class="single_advisor_details_info">
 						<h6>
 							<?php
-								echo "Niloy Islam";
+								echo $group[3]["name"];
 							?>
 						</h6>
 						<p class="designation">
 							<?php
-								echo "Marketing Manager";
+								echo $group[3]["Year"];
 							?>
 						</p>
 					</div>

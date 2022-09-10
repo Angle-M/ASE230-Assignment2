@@ -7,18 +7,86 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 </head>
+  <?php
+    $group=[
+    	[
+        'name'=>'Angel Munoz',
+      	'Year'=>'Sophmore',
+        'Dprofession'=>'Software Devolper or Full-Stack Deveolper',
+        'Dcompany'=>'Anywhere that allows me to travel and work remotely',
+        'Email'=>'aim1310@icloud.com',
+        'Sintro'=>'Place Holder',
+        'TSkilla'=>'Communication',
+        'TSkillb'=>'Information Technology',
+        'TSkillc'=>'Education',
+        'Snuma'=>'',
+        'Snumb'=>'',
+        'Snumc'=>'',
+        'Ffact'=> 'I also watch Super Sentai (Japanese Power Rangers) and I am going to Paramore this fall',
+        'picture'=>[''],
+      ],
+    	[
+        'name'=>'',
+      	'Year'=>'',
+        'Dprofession'=>'',
+        'Dcompany'=>'',
+        'Email'=>'',
+        'Sintro'=>'',
+        'TSkilla'=>'',
+        'TSkillb'=>'',
+        'TSkillc'=>'',
+        'Snuma'=>'',
+        'Snumb'=>'',
+        'Snumc'=>'',
+        'Ffact'=> '',
+        'picture'=>[''],
+    	],
+    	[
+        'name'=>'',
+      	'Year'=>'',
+        'Dprofession'=>'',
+        'Dcompany'=>'',
+        'Email'=>'',
+        'Sintro'=>'',
+        'TSkilla'=>'',
+        'TSkillb'=>'',
+        'TSkillc'=>'',
+        'Snuma'=>'',
+        'Snumb'=>'',
+        'Snumc'=>'',
+        'Ffact'=> '',
+        'picture'=>[''],
+    	],
+			[
+        'name'=>'',
+      	'Year'=>'',
+        'Dprofession'=>'',
+        'Dcompany'=>'',
+        'Email'=>'',
+        'Sintro'=>'',
+        'TSkilla'=>'',
+        'TSkillb'=>'',
+        'TSkillc'=>'',
+        'Snuma'=>'',
+        'Snumb'=>'',
+        'Snumc'=>'',
+        'Ffact'=> '',
+        'picture'=>[''],
+    	],
+		];
+	?>
 
 <body>
   <link rel="stylesheet" href="assets/css/detail.css">
   <title>
     <?php
-      echo "ASE 230 - Angel Munoz";
+      echo "ASE 230 - ".$group[$_GET['id']]['name'];
     ?>
   </title>
   <div class="container text-center mb-5">
     <h1>
       <?php
-        echo "This is ASE 230 - Angel Munoz";
+         echo "ASE 230 - ".$group[$_GET['id']]['name'];
       ?>
     </h1>
   </div>
@@ -26,6 +94,7 @@
     <div class="row">
       <div class="col-lg-5 col-md-6">
         <div class="mb-2">
+          <!--I was unable to find a way to add images to arrays and setup them up if someone can take a look as that-->
           <?php
             echo ' <img class="w-100" src="https://bootdey.com/img/Content/avatar/avatar7.png"alt="">';
           ?>
@@ -33,7 +102,7 @@
         <div class="mb-2 d-flex">
           <h4 class="font-weight-normal">
             <?php
-              echo "Angel Munoz";
+               echo $group[$_GET['id']]['name'];
             ?>
           </h4>
           <div class="social d-flex ml-auto">
@@ -68,37 +137,31 @@
           <ul class="list-unstyled">
             <li class="media">
               <span class="w-25 text-black font-weight-normal">
-                <?php
-                  echo "Dream profession: ";
-                ?>
+                Dream profession:
               </span>
               <label class="media-body">
                 <?php
-                  echo "Software Devolper or Full-Stack Deveolper";
+                  echo $group[$_GET['id']]['Dprofession'];
                 ?>
               </label>
             </li>
             <li class="media">
               <span class="w-25 text-black font-weight-normal">
-                <?php
-                  echo "Dream company:";
-                ?>
+                Dream company:
               </span>
               <label class="media-body">
                 <?php
-                  echo "Anywhere that allows me to travel and work remotely";
+                  echo $group[$_GET['id']]['Dcompany'];
                 ?>
               </label>
             </li>
             <li class="media">
               <span class="w-25 text-black font-weight-normal">
-                <?php
-                  echo "Email:";
-                ?>
+                Email:
               </span>
               <label class="media-body">
                 <?php
-                  echo "aim1310@icloud.com";
+                  echo $group[$_GET['id']]['Email'];
                 ?>
               </label>
             </li>
@@ -107,15 +170,11 @@
       </div>
       <div class="col-lg-7 col-md-6 pl-xl-3">
         <h5 class="font-weight-normal">
-          <?php
-            echo "Short intro";
-          ?>
+          Short intro:
         </h5>
         <p>
           <?php
-            echo "Along with your plans, you should consider developing an action orientation that will keep you motivated to move forward at all times. 
-            This requires a little self-discipline, but is a crucial component to achievement of any kind. Before starting any new activity, ask yourself
-             if that activity will move you closer to your goals. If the answer is no, you may want to reconsider doing it at that time.";
+           echo $group[$_GET['id']]['Sintro'];
           ?>
         </p>
         <div class="my-2 bg-light p-2">
@@ -128,9 +187,10 @@
         </div>
         <div class="mb-2 mt-2 pt-1">
           <h5 class="font-weight-normal">
-            <?php
-              echo "Top skills";
-            ?>
+            <!--
+          Unable to get the section below functioning if someone could take a look
+          -->
+            Top skills:
           </h5>
         </div>
         <div class="py-1">
@@ -138,7 +198,7 @@
             <div class="progress-bar" role="progressbar" style="width:81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100">
               <div class="progress-bar-title">
                 <?php
-                  echo "Communication";
+                   echo $group[$_GET['id']]['Tskilla'];
                 ?>
               </div>
               <span class="progress-bar-number">
@@ -154,7 +214,7 @@
             <div class="progress-bar" role="progressbar" style="width:90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
               <div class="progress-bar-title">
                 <?php
-                  echo "Information Technologies";
+                   echo $group[$_GET['id']]['Tskillb'];
                 ?>
               </div>
               <span class="progress-bar-number">
@@ -170,7 +230,7 @@
             <div class="progress-bar" role="progressbar" style="width:72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
               <div class="progress-bar-title">
                 <?php
-                  echo "Education";
+                  echo $group[$_GET['id']]['Tskillc'];
                 ?>
               </div>
               <span class="progress-bar-number">
@@ -181,14 +241,13 @@
             </div>
           </div>
         </div>
+        <!--Everything above this comment is not fully functioning-->
         <h5 class="font-weight-normal">
-          <?php
-            echo "Fun fact";
-          ?>
+          Fun fact
         </h5>
         <p>
           <?php
-            echo "I also watch Super Sentai (Japanese Power Rangers) and I'm going to Paramore this fall";
+             echo $group[$_GET['id']]['Ffact'];
           ?>
         </p>
       </div>
