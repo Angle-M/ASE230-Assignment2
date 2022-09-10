@@ -39,7 +39,7 @@
         'Snumb'=>'35',
         'Snumc'=>'90',
         'Ffact'=> 'I recently started getting into collecting Nintendo products.',
-        'picture'=>'',
+        'picture'=>['images/amaya1.jpg'],
     	],
     	[
         'name'=>'',

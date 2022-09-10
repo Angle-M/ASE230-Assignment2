@@ -10,29 +10,38 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/index.css">
 	<!--I was unable to find a way to add images to arrays and setup them up if someone can take a look as that-->
+
+	<!--SYMBOL CODES:
+			Freshman: &#9733
+			Sophomore: &#9734
+			Junior: &#9775
+			Senior: &#9788
+	-->
 	<?php
 		$i=0;
 		$group=[
     		[
         		'name'=>'Angel Munoz',
         		'Year'=>'Sophmore',
-        		'picture'=>'',
+				'Symbol'=>' &#9734',
+        		'picture'=>['']
     		],
     		[
         		'name'=>'Amaya Bryant',
         		'Year'=>'Sophomore',
-        		'picture'=>'',
+				'Symbol'=>' &#9734',
+        		'picture'=>['images/amayaBryant.jpg']
     		],
     		[
         		'name'=>'',
         		'Year'=>'',
-        		'picture'=>[
-					''
-				]
+				'Symbol'=>'',
+        		'picture'=>['']
     		],
 			[
         		'name'=>'',
         		'Year'=>'',
+				'Symbol'=>'',
         		'picture'=>['']
     		],
 		];
@@ -115,6 +124,7 @@
 						<p class="designation">
 							<?php
 								echo $group[0]["Year"];
+								echo $group[0]["Symbol"];
 							?>
 						</p>
 					</div>
@@ -165,6 +175,7 @@
 						<p class="designation">
 							<?php
 								echo $group[1]["Year"];
+								echo $group[1]["Symbol"];
 							?>
 						</p>
 					</div>
@@ -215,6 +226,7 @@
 						<p class="designation">
 							<?php
 								echo $group[2]["Year"];
+								echo $group[2]["Symbol"];
 							?>
 						</p>
 					</div>
@@ -265,6 +277,7 @@
 						<p class="designation">
 							<?php
 								echo $group[3]["Year"];
+								echo $group[3]["Symbol"];
 							?>
 						</p>
 					</div>
