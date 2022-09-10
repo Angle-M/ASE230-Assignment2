@@ -33,13 +33,14 @@
         'Email'=>'bryanta21@nku.edu',
         'Sintro'=>'My name is Amaya Bryant and I am a Sophomore at NKU. I am majoring in ASE, with a minor in Computer Science. I am the oldest of 3 and I do not have many hobbies other than playing video games and talking to friends.',
         'TSkilla'=>'Being bored',
+        'TSkillNum'=>35,
         'TSkillb'=>'Programming',
         'TSkillc'=>'Sleeping',
-        'Snuma'=>'',
-        'Snumb'=>'',
-        'Snumc'=>'',
+        'Snuma'=>'85',
+        'Snumb'=>'35',
+        'Snumc'=>'90',
         'Ffact'=> 'I recently started getting into collecting Nintendo products.',
-        'picture'=>[''],
+        'picture'=>'',
     	],
     	[
         'name'=>'',
@@ -196,10 +197,7 @@
         <div class="py-1">
           <div class="progress">
             <div class="progress-bar" role="progressbar" style="width:81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar-title">
-                <?php
-                   echo $group[$_GET['id']]['Tskilla'];
-                ?>
+              <div class="progress-bar-title"> <? echo $group[$_GET['id']]['TSkilla'] ?>
               </div>
               <span class="progress-bar-number">
                 <?php
@@ -212,10 +210,7 @@
         <div class="py-1">
           <div class="progress">
             <div class="progress-bar" role="progressbar" style="width:90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar-title">
-                <?php
-                   echo $group[$_GET['id']]['Tskillb'];
-                ?>
+              <div class="progress-bar-title"><? echo $group[$_GET['id']]['TSkillb'] ?>
               </div>
               <span class="progress-bar-number">
                 <?php
@@ -228,10 +223,7 @@
         <div class="py-1">
           <div class="progress">
             <div class="progress-bar" role="progressbar" style="width:72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar-title">
-                <?php
-                  echo $group[$_GET['id']]['Tskillc'];
-                ?>
+              <div class="progress-bar-title"><? echo $group[$_GET['id']]['TSkillc'] ?>
               </div>
               <span class="progress-bar-number">
                 <?php

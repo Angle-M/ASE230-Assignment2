@@ -16,12 +16,12 @@
     		[
         		'name'=>'Angel Munoz',
         		'Year'=>'Sophmore',
-        		'picture'=>['']
+        		'picture'=>'',
     		],
     		[
         		'name'=>'Amaya Bryant',
         		'Year'=>'Sophomore',
-        		'picture'=>['']
+        		'picture'=>'',
     		],
     		[
         		'name'=>'',
