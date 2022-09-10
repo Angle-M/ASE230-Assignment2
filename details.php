@@ -33,7 +33,6 @@
         'Email'=>'bryanta21@nku.edu',
         'Sintro'=>'My name is Amaya Bryant and I am a Sophomore at NKU. I am majoring in ASE, with a minor in Computer Science. I am the oldest of 3 and I do not have many hobbies other than playing video games and talking to friends.',
         'TSkilla'=>'Being bored',
-        'TSkillNum'=>35,
         'TSkillb'=>'Programming',
         'TSkillc'=>'Sleeping',
         'Snuma'=>'85',
