@@ -19,8 +19,8 @@
         		'picture'=>['']
     		],
     		[
-        		'name'=>'',
-        		'Year'=>'',
+        		'name'=>'Amaya Bryant',
+        		'Year'=>'Sophomore',
         		'picture'=>['']
     		],
     		[
