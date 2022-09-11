@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/detail.css">
 </head>
   <?php
     $group=[
@@ -33,7 +34,7 @@
         'Dcompany'=>'Google or Microsoft',
         'Email'=>'bryanta21@nku.edu',
         'Sintro'=>'My name is Amaya Bryant and I am a Sophomore at NKU. I am majoring in ASE, with a minor in Computer Science. I am the oldest of 3 and I do not have many hobbies other than playing video games and talking to friends.',
-        'Squote'=>'personal quote',
+        'Squote'=>'Oh the thinks you can think. - Dr. Seuss',
         'TSkilla'=>'Being bored',
         'TSkillb'=>'Programming',
         'TSkillc'=>'Sleeping',
@@ -81,12 +82,7 @@
 	?>
 
 <body>
-  <link rel="stylesheet" href="assets/css/detail.css">
-  <title>
-    <?php
-      echo "ASE 230 - ".$group[$_GET['id']]['name'];
-    ?>
-  </title>
+  <title> <?php echo "ASE 230 - ".$group[$_GET['id']]['name'] ?> </title>
   <div class="container text-center mb-5">
     <h1>
       <?php
@@ -193,7 +189,7 @@
         <div class="mb-2 mt-2 pt-1">
           <h5 class="font-weight-normal">
             <!--
-          Unable to get the section below functioning if someone could take a look
+          Unable to get the section below functioning if someone could take a look 
           -->
             Top skills:
           </h5>

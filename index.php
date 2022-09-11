@@ -11,12 +11,7 @@
 	<link rel="stylesheet" href="assets/css/index.css">
 	<!--I was unable to find a way to add images to arrays and setup them up if someone can take a look as that-->
 
-	<!--SYMBOL CODES:
-			Freshman: &#9733
-			Sophomore: &#9734
-			Junior: &#9775
-			Senior: &#9788
-	-->
+
 	<?php
 		$i=0;
 		$group=[
@@ -33,9 +28,9 @@
         		'picture'=>['images/amayaBryant.jpg']
     		],
     		[
-        		'name'=>'',
-        		'Year'=>'',
-				'Symbol'=>'',
+        		'name'=>'Quay Robinson',
+        		'Year'=>'Junior',
+				'Symbol'=>str_repeat(' &#9734',3),
         		'picture'=>['']
     		],
 			[
