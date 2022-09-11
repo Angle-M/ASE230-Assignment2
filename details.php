@@ -16,16 +16,16 @@
         'Dprofession'=>'Software Devolper or Full-Stack Deveolper',
         'Dcompany'=>'Anywhere that allows me to travel and work remotely',
         'Email'=>'aim1310@icloud.com',
-        'Sintro'=>'Place Holder',
-        'Squote'=>'personal quote',
+        'Sintro'=>'My name is Angel Munoz, I\'m a sophomore at NKU. I am a CIT and ASE double Major. I\'m the middle child of 5 and my hobbies are watching anime (Currently watching One Piece) Playing video games and reading.  ',
+        'Squote'=>'You can\'t see the whole picture until you look at it from the outside - Trafalgar Law',
         'TSkilla'=>'Communication',
         'TSkillb'=>'Information Technology',
         'TSkillc'=>'Education',
-        'Snuma'=>'',
-        'Snumb'=>'',
-        'Snumc'=>'',
-        'Ffact'=> 'I also watch Super Sentai (Japanese Power Rangers) and I am going to Paramore this fall',
-        'picture'=>[''],
+        'Snuma'=>'84',
+        'Snumb'=>'90',
+        'Snumc'=>'75',
+        'Ffact'=> 'I am going to Paramore this fall',
+        'picture'=>['images/munoza2.png'],
       ],
     	[
         'name'=>'Amaya Bryant',
@@ -195,9 +195,12 @@
           </h5>
         </div>
         <div class="py-1">
+          <?php
+            echo $group[$_GET['id']]['TSkilla']
+          ?>
           <div class="progress">
             <div class="progress-bar" role="progressbar" style="width:81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar-title"> <? echo $group[$_GET['id']]['TSkilla'] ?>
+              <div class="progress-bar-title"> 
               </div>
               <span class="progress-bar-number">
                 <?php
@@ -208,9 +211,12 @@
           </div>
         </div>
         <div class="py-1">
+          <?php
+            echo $group[$_GET['id']]['TSkillb']
+          ?>
           <div class="progress">
             <div class="progress-bar" role="progressbar" style="width:90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar-title"><? echo $group[$_GET['id']]['TSkillb'] ?>
+              <div class="progress-bar-title">
               </div>
               <span class="progress-bar-number">
                 <?php
@@ -221,9 +227,12 @@
           </div>
         </div>
         <div class="py-1">
+          <?php
+            echo $group[$_GET['id']]['TSkillc']
+          ?>
           <div class="progress">
             <div class="progress-bar" role="progressbar" style="width:72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar-title"><? echo $group[$_GET['id']]['TSkillc'] ?>
+              <div class="progress-bar-title">
               </div>
               <span class="progress-bar-number">
                 <?php

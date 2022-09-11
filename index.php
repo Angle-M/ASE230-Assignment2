@@ -19,7 +19,7 @@
         		'name'=>'Angel Munoz',
         		'Year'=>'Sophomore',
 				'Symbol'=> str_repeat(' &#9734',2),
-        		'picture'=>['']
+        		'picture'=>['images/munoza2.png']
     		],
     		[
         		'name'=>'Amaya Bryant',
@@ -31,13 +31,13 @@
         		'name'=>'Quay Robinson',
         		'Year'=>'Junior',
 				'Symbol'=>str_repeat(' &#9734',3),
-        		'picture'=>['']
+        		'picture'=>['images/Quay.jpeg']
     		],
 			[
         		'name'=>'Tami Farber',
         		'Year'=>'Senior',
 				'Symbol'=> str_repeat(' &#9734',4),
-        		'picture'=> []#a href;
+        		'picture'=> ['TamiFarber.jpg']#a href;
     		],
 		];
 	?>
