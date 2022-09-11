@@ -16,6 +16,7 @@
         'Dcompany'=>'Anywhere that allows me to travel and work remotely',
         'Email'=>'aim1310@icloud.com',
         'Sintro'=>'Place Holder',
+        'Squote'=>'personal quote',
         'TSkilla'=>'Communication',
         'TSkillb'=>'Information Technology',
         'TSkillc'=>'Education',
@@ -32,6 +33,7 @@
         'Dcompany'=>'Google or Microsoft',
         'Email'=>'bryanta21@nku.edu',
         'Sintro'=>'My name is Amaya Bryant and I am a Sophomore at NKU. I am majoring in ASE, with a minor in Computer Science. I am the oldest of 3 and I do not have many hobbies other than playing video games and talking to friends.',
+        'Squote'=>'personal quote',
         'TSkilla'=>'Being bored',
         'TSkillb'=>'Programming',
         'TSkillc'=>'Sleeping',
@@ -48,6 +50,7 @@
         'Dcompany'=>'FBI',
         'Email'=>'robinsonq4@nku.edu',
         'Sintro'=>'My name is Quay, and I am a Junior here at NKU. I play on the varsity Esports team, and am apart of 2 other campus organizations.',
+        'Squote'=>'personal quote',
         'TSkilla'=>'Daydreaming',
         'TSkillb'=>'Math',
         'TSkillc'=>'Listening',
@@ -58,19 +61,20 @@
         'picture'=>[''],
     	],
 			[
-        'name'=>'',
-      	'Year'=>'',
-        'Dprofession'=>'',
-        'Dcompany'=>'',
-        'Email'=>'',
-        'Sintro'=>'',
-        'TSkilla'=>'',
-        'TSkillb'=>'',
-        'TSkillc'=>'',
-        'Snuma'=>'',
-        'Snumb'=>'',
-        'Snumc'=>'',
-        'Ffact'=> '',
+        'name'=>'Tami Farber',
+      	'Year'=>'Senior',
+        'Dprofession'=>'Hydrologist',
+        'Dcompany'=>'NOAA',
+        'Email'=>'farbert1@nku.edu',
+        'Sintro'=>'My name is Tami, and I am in my second senior year at NKU. I have been a Data Science major since 2017, but in seeking a path to use data science in the scientific community I have also studied biology, chemistry, and physics. My Data Science degree now has an Ecology application.',
+        'Squote'=>'I don\'t know anything with certainty, but seeing the stars makes me dream. <br> -- Vincent Van Gogh',
+        'TSkilla'=>'Academic Study',
+        'TSkillb'=>'Programming',
+        'TSkillc'=>'Scientific Research',
+        'Snuma'=>'85',
+        'Snumb'=>'75',
+        'Snumc'=>'70',
+        'Ffact'=> 'I spent the summer stalking birds and writing down what they did.',
         'picture'=>[''],
     	],
 		];
@@ -180,8 +184,9 @@
         <div class="my-2 bg-light p-2">
           <p class="font-italic mb-0">
             <?php
-              echo "The price is something not necessarily defined as financial. It could be time, effort, sacrifice,
-                money or perhaps, something else.";
+            echo $group[$_GET['id']]['Squote']
+              // echo "The price is something not necessarily defined as financial. It could be time, effort, sacrifice,
+              //   money or perhaps, something else.";
             ?>
           </p>
         </div>

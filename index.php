@@ -22,14 +22,14 @@
 		$group=[
     		[
         		'name'=>'Angel Munoz',
-        		'Year'=>'Sophmore',
-				'Symbol'=>' &#9734',
+        		'Year'=>'Sophomore',
+				'Symbol'=> str_repeat(' &#9734',2),
         		'picture'=>['']
     		],
     		[
         		'name'=>'Amaya Bryant',
         		'Year'=>'Sophomore',
-				'Symbol'=>' &#9734',
+				'Symbol'=> str_repeat(' &#9734',2),
         		'picture'=>['images/amayaBryant.jpg']
     		],
     		[
@@ -39,10 +39,10 @@
         		'picture'=>['']
     		],
 			[
-        		'name'=>'',
-        		'Year'=>'',
-				'Symbol'=>'',
-        		'picture'=>['']
+        		'name'=>'Tami Farber',
+        		'Year'=>'Senior',
+				'Symbol'=> str_repeat(' &#9734',4),
+        		'picture'=> []#a href;
     		],
 		];
 	?>
@@ -84,28 +84,28 @@
 
 					<!-- Team Thumb-->
 					<div class="advisor_thumb">
-						
+
 							<?php
 								$i=0;
-								echo '<a href="details.php?id='.$i.'&name='.$group[0]['name'].'">	
+								echo '<a href="details.php?id='.$i.'&name='.$group[0]['name'].'">
 									<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
 								</a>';
 							?>
-						
+
 
 						<!-- Social Info-->
-						
+
 						<div class="social-info">
 							<?php
 								$i=0;
 								echo '<a href="details.php?id='.$i.'&name='.$group[0]['name'].'">
 										<i class="fa fa-facebook"></i>
 									</a>';
-							
+
 								echo '<a href="details.php?id='.$i.'&name='.$group[0]['name'].'">
 										<i class="fa fa-twitter"></i>
 									</a>';
-							
+
 								echo '<a href="details.php?id='.$i.'&name='.$group[0]['name'].'">
 									<i class="fa fa-linkedin"></i>
 								</a>';
@@ -140,7 +140,7 @@
 						<a href="details.php">
 							<?php
 								$i=1;
-								echo '<a href="details.php?id='.$i.'&name='.$group[1]['name'].'">	
+								echo '<a href="details.php?id='.$i.'&name='.$group[1]['name'].'">
 									<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
 								</a>';
 							?>
@@ -153,11 +153,11 @@
 								echo '<a href="details.php?id='.$i.'&name='.$group[1]['name'].'">
 										<i class="fa fa-facebook"></i>
 									</a>';
-							
+
 								echo '<a href="details.php?id='.$i.'&name='.$group[1]['name'].'">
 										<i class="fa fa-twitter"></i>
 									</a>';
-							
+
 								echo '<a href="details.php?id='.$i.'&name='.$group[1]['name'].'">
 									<i class="fa fa-linkedin"></i>
 								</a>';
@@ -191,7 +191,7 @@
 						<a href="details.php">
 							<?php
 							$i=2;
-								echo '<a href="details.php?id='.$i.'&name='.$group[2]['name'].'">	
+								echo '<a href="details.php?id='.$i.'&name='.$group[2]['name'].'">
 									<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
 								</a>';
 							?>
@@ -204,11 +204,11 @@
 								echo '<a href="details.php?id='.$i.'&name='.$group[2]['name'].'">
 										<i class="fa fa-facebook"></i>
 									</a>';
-							
+
 								echo '<a href="details.php?id='.$i.'&name='.$group[2]['name'].'">
 										<i class="fa fa-twitter"></i>
 									</a>';
-							
+
 								echo '<a href="details.php?id='.$i.'&name='.$group[2]['name'].'">
 									<i class="fa fa-linkedin"></i>
 								</a>';
@@ -242,7 +242,7 @@
 						<a href="details.php">
 							<?php
 								$i=3;
-								echo '<a href="details.php?id='.$i.'&name='.$group[3]['name'].'">	
+								echo '<a href="details.php?id='.$i.'&name='.$group[3]['name'].'">
 									<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
 								</a>';
 							?>
@@ -255,11 +255,11 @@
 								echo '<a href="details.php?id='.$i.'&name='.$group[3]['name'].'">
 										<i class="fa fa-facebook"></i>
 									</a>';
-							
+
 								echo '<a href="details.php?id='.$i.'&name='.$group[3]['name'].'">
 										<i class="fa fa-twitter"></i>
 									</a>';
-							
+
 								echo '<a href="details.php?id='.$i.'&name='.$group[3]['name'].'">
 									<i class="fa fa-linkedin"></i>
 								</a>';
