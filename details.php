@@ -24,8 +24,8 @@
         'Snuma'=>'84',
         'Snumb'=>'90',
         'Snumc'=>'75',
-        'Ffact'=> 'I am going to Paramore this fall',
-        'picture'=>['images/munoza2.png'],
+        'Ffact'=> 'I am going to Paramore see this fall',
+        'picture'=>'images/munoza2.png',
       ],
     	[
         'name'=>'Amaya Bryant',
@@ -42,7 +42,7 @@
         'Snumb'=>'35',
         'Snumc'=>'90',
         'Ffact'=> 'I recently started getting into collecting Nintendo products.',
-        'picture'=>['images/amaya1.jpg'],
+        'picture'=>'images/amaya1.jpg',
     	],
     	[
         'name'=>'Quay Robinson',
@@ -59,7 +59,7 @@
         'Snumb'=>'86',
         'Snumc'=>'87',
         'Ffact'=> 'I do not like chocolate ice cream.',
-        'picture'=>[''],
+        'picture'=>'images/Quay.jpeg',
     	],
 			[
         'name'=>'Tami Farber',
@@ -95,9 +95,8 @@
       <div class="col-lg-5 col-md-6">
         <div class="mb-2">
           <!--I was unable to find a way to add images to arrays and setup them up if someone can take a look as that-->
-          <?php
-            echo ' <img class="w-100" src="https://bootdey.com/img/Content/avatar/avatar7.png"alt="">';
-          ?>
+            <img src="<?php echo $group[$_GET['id']]['picture']?>" height="350">
+            
         </div>
         <div class="mb-2 d-flex">
           <h4 class="font-weight-normal">
@@ -266,3 +265,5 @@
 </body>
 
 </html>
+
+
