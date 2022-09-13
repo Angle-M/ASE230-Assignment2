@@ -51,7 +51,7 @@
         'Dcompany'=>'FBI',
         'Email'=>'robinsonq4@nku.edu',
         'Sintro'=>'My name is Quay, and I am a Junior here at NKU. I play on the varsity Esports team, and am apart of 2 other campus organizations.',
-        'Squote'=>'personal quote',
+        'Squote'=>'A sword wields no strength unless the hand that holds it has courage. - Legend of Zelda: Twilight Princess',
         'TSkilla'=>'Daydreaming',
         'TSkillb'=>'Math',
         'TSkillc'=>'Listening',
