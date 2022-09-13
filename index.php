@@ -35,7 +35,7 @@
         		'name'=>'Tami Farber',
         		'Year'=>'Senior',
 				'Symbol'=> str_repeat(' &#9734',4),
-        		'picture'=> 'TamiFarber.JPG'#a href;
+        		'picture'=> 'images/TamiFarber.jpg'
     		],
 		];
 	?>
@@ -70,7 +70,7 @@
 		</div>
 		<div class="row">
 
-						<?php 
+						<?php
 							$i=0;
 								foreach($group as $member){
 							?>
@@ -83,7 +83,7 @@
 						<a href="details.php?id=<?= $i.'&name='.$member['name']?>"> <img src="<?php echo $member['picture']?>" alt="Group Member Image" height="180"></a>
 						<!-- Social Info-->
 						<div class="social-info">
-					
+
 							<a href="details.php?id=<?= $i.'&name='.$member['name']?>"
 										i class="fa fa-facebook"></i>
 									</a>
@@ -97,9 +97,9 @@
 								</a>
 						</div>
 					</div>
-					
+
 					<!-- Team Details-->
-					<div class="single_advisor_details_info">	
+					<div class="single_advisor_details_info">
 						<h6>
 							<?php
 								echo $member["name"];

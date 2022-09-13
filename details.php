@@ -76,7 +76,7 @@
         'Snumb'=>'75',
         'Snumc'=>'70',
         'Ffact'=> 'I spent the summer stalking birds and writing down what they did.',
-        'picture'=>[''],
+        'picture'=>'images/TamiFarber.jpg',
     	],
 		];
 	?>
@@ -96,7 +96,7 @@
         <div class="mb-2">
           <!--I was unable to find a way to add images to arrays and setup them up if someone can take a look as that-->
             <img src="<?php echo $group[$_GET['id']]['picture']?>" height="350">
-            
+
         </div>
         <div class="mb-2 d-flex">
           <h4 class="font-weight-normal">
@@ -188,7 +188,7 @@
         <div class="mb-2 mt-2 pt-1">
           <h5 class="font-weight-normal">
             <!--
-          Unable to get the section below functioning if someone could take a look 
+          Unable to get the section below functioning if someone could take a look
           -->
             Top skills:
           </h5>
@@ -199,7 +199,7 @@
           ?>
           <div class="progress">
             <div class="progress-bar" role="progressbar" style="width:81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar-title"> 
+              <div class="progress-bar-title">
               </div>
               <span class="progress-bar-number">
                 <?php
@@ -265,5 +265,3 @@
 </body>
 
 </html>
-
-
