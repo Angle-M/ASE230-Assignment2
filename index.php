@@ -11,33 +11,15 @@
 	<link rel="stylesheet" href="assets/css/index.css">
 
 	<?php
-	$i=0;
-		$group=[
-    		[
-        		'name'=>'Angel Munoz',
-        		'Year'=>'Sophomore',
-				'Symbol'=> str_repeat(' &#9734',2),
-        		'picture'=>'images/munoza2.png'
-    		],
-    		[
-        		'name'=>'Amaya Bryant',
-        		'Year'=>'Sophomore',
-				'Symbol'=> str_repeat(' &#9734',2),
-        		'picture'=>'images/amaya1.JPG'
-    		],
-    		[
-        		'name'=>'Quay Robinson',
-        		'Year'=>'Junior',
-				'Symbol'=>str_repeat(' &#9734',3),
-        		'picture'=>'images/Quay.jpeg'
-    		],
-			[
-        		'name'=>'Tami Farber',
-        		'Year'=>'Senior',
-				'Symbol'=> str_repeat(' &#9734',4),
-        		'picture'=> 'images/TamiFarber.jpg'
-    		],
-		];
+		require_once('data.php'); // to hopefully run the code that builds the json file
+
+		$local_group = ''; // setting up empty list
+
+		$fh = fopen('data.json','r');
+		while($line=fgets($fh)) $local_group.=$line;
+		fclose($fh);
+
+		$group = json_decode($local_group, true);
 	?>
 	<title>
 		ASE 230 - class of Fall 2022
