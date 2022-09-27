@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="assets/css/detail.css">
 </head>
   <?php
-    require_once('data.php');
+    require('function.php');
+    require('data.php');
     $local_group = ''; // setting up empty list
 
     $fh = fopen('data.json','r');
@@ -108,17 +109,20 @@
               </span>
               <label class="media-body">
                 <?php
-                function calculateDOB($DOB){
-
-                  $todaysDate = date("Y-m-d");
-                  $age = date_diff(date_create($DOB), date_create($todaysDate));
-                  echo $age->format('%y');
-                }
-                $birthDate = $group[$_GET['id']]['DOB'];
-                  calculateDOB($birthDate);
+                require_once('function.php');
+                calculateDOB($age);
                 ?>
               </label>
             </li>
+            <span class="w-25 text-black font-weight-normal">
+              Time on Earth:
+            </span>
+            <label class="media-body">
+              <?php
+                require_once('function.php');
+                calculateLifespan($age);
+            ?>
+            </label>
           </ul>
         </div>
       </div>
@@ -142,9 +146,6 @@
         </div>
         <div class="mb-2 mt-2 pt-1">
           <h5 class="font-weight-normal">
-            <!--
-          Unable to get the section below functioning if someone could take a look
-          -->
             Top skills:
           </h5>
         </div>

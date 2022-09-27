@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="assets/css/index.css">
 
 	<?php
+		require_once('function.php');
 		require_once('data.php'); // to hopefully run the code that builds the json file
 
 		$local_group = ''; // setting up empty list
@@ -51,25 +52,21 @@
 			</div>
 		</div>
 		<div class="row">
-
-						<?php
-							$i=0;
-								foreach($group as $member){
-							?>
+			<?php
+				$i=0;
+					foreach($group as $member){
+			?>
 			<!-- Single Advisor-->
 			<div class="col-12 col-sm-6 col-lg-3">
 				<div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-
 					<!-- Team Thumb-->
 					<div class="advisor_thumb">
 						<a href="details.php?id=<?= $i.'&name='.$member['name']?>"> <img src="<?php echo $member['picture']?>" alt="Group Member Image" height="180"></a>
 						<!-- Social Info-->
 						<div class="social-info">
-
 							<a href="details.php?id=<?= $i.'&name='.$member['name']?>"
 										i class="fa fa-facebook"></i>
 									</a>
-
 							<a href="details.php?id=<?= $i.'&name='.$member['name']?>"
 										<i class="fa fa-twitter"></i>
 									</a>

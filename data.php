@@ -9,7 +9,7 @@
       'Symbol'=> str_repeat(' &#9734',2),
       'Dprofession'=>'Software Devolper or Full-Stack Deveolper',
       'Dcompany'=>'Anywhere that allows me to travel and work remotely',
-      'DOB' =>'',
+      'DOB' =>'10-10-2002',
       'Email'=>'aim1310@icloud.com',
       'Sintro'=>'My name is Angel Munoz, I\'m a sophomore at NKU. I am a CIT and ASE double Major. I\'m the middle child of 5 and my hobbies are watching anime (Currently watching One Piece) Playing video games and reading.  ',
       'Squote'=>'You can\'t see the whole picture until you look at it from the outside - Trafalgar Law',
