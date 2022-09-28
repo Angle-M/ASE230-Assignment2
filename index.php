@@ -11,8 +11,8 @@
 	<link rel="stylesheet" href="assets/css/index.css">
 
 	<?php
-		require_once('function.php');
-		require_once('data.php'); // to hopefully run the code that builds the json file
+		require('function.php');
+		require('data.php'); // to hopefully run the code that builds the json file
 
 		$local_group = ''; // setting up empty list
 

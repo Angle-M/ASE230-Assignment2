@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="assets/css/detail.css">
 </head>
   <?php
-    require('function.php');
     require('data.php');
     $local_group = ''; // setting up empty list
 
@@ -19,6 +18,13 @@
 
     $group = json_decode($local_group, true);
 	?>
+  <?php
+     require('function.php');
+     $i = $_GET['id'];
+		//sets certain variables to a person's date of birth based on the index
+		[$ageYear, $ageMonth, $ageDay] =calculateDOB($group[$i]["DOB"]);
+
+  ?>
 
 <body>
   <title> <?php echo "ASE 230 - ".$group[$_GET['id']]['name'] ?> </title>
@@ -105,23 +111,18 @@
             </li>
             <li class="media">
               <span class="w-25 text-black font-weight-normal">
-                Age:
               </span>
               <label class="media-body">
-                <?php
-                require_once('function.php');
-                calculateDOB($age);
-                ?>
+                  Age: <br /><i><?=$ageYear?></i><br />
               </label>
             </li>
             <span class="w-25 text-black font-weight-normal">
               Time on Earth:
             </span>
             <label class="media-body">
-              <?php
-                require_once('function.php');
-                calculateLifespan($age);
-            ?>
+               <i>
+                 <?=$ageYear," years, ",$ageMonth," month(s), and ",$ageDay," day(s) ago."?>
+                </i>
             </label>
           </ul>
         </div>
