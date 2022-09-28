@@ -111,9 +111,10 @@
             </li>
             <li class="media">
               <span class="w-25 text-black font-weight-normal">
+                Age:
               </span>
               <label class="media-body">
-                  Age: <br /><i><?=$ageYear?></i><br />
+                  <i><?=$ageYear?></i><br />
               </label>
             </li>
             <span class="w-25 text-black font-weight-normal">
