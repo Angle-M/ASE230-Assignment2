@@ -24,6 +24,15 @@
 		//sets certain variables to a person's date of birth based on the index
 		[$ageYear, $ageMonth, $ageDay] =calculateDOB($group[$i]["DOB"]);
 
+    // extract skill percentages from data.php and assign to variables to use in progres bars
+    $skilla = $group[$i]['Snuma']; # has % sign for width value and text
+    $numa = rtrim($skilla,'%');    # trims % from string for aria-valuenow= in case we ever need it
+    $skillb = $group[$i]['Snumb'];
+    $numb = rtrim($skillb,'%');
+    $skillc = $group[$i]['Snumc'];
+    $numc = rtrim($skillc,'%');
+
+
   ?>
 
 <body>
@@ -156,12 +165,12 @@
             echo $group[$_GET['id']]['TSkilla']
           ?>
           <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width:81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" role="progressbar" style="width:<?=$skilla?>" aria-valuenow="<?=$numa?>" aria-valuemin="0" aria-valuemax="100">
               <div class="progress-bar-title">
               </div>
               <span class="progress-bar-number">
                 <?php
-                  echo "81%";
+                  echo $skilla;
                 ?>
               </span>
             </div>
@@ -172,12 +181,12 @@
             echo $group[$_GET['id']]['TSkillb']
           ?>
           <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width:90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" role="progressbar" style="width:<?=$skillb?>" aria-valuenow="<?=$numb?>" aria-valuemin="0" aria-valuemax="100">
               <div class="progress-bar-title">
               </div>
               <span class="progress-bar-number">
                 <?php
-                  echo "90%";
+                  echo $skillb;
                 ?>
               </span>
             </div>
@@ -188,12 +197,12 @@
             echo $group[$_GET['id']]['TSkillc']
           ?>
           <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width:72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" role="progressbar" style="width:<?=$skillc?>" aria-valuenow="<?=$numc?>" aria-valuemin="0" aria-valuemax="100">
               <div class="progress-bar-title">
               </div>
               <span class="progress-bar-number">
                 <?php
-                  echo "72%";
+                  echo $skillc;
                 ?>
               </span>
             </div>
